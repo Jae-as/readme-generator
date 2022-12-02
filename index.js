@@ -1,7 +1,9 @@
 const fileGenerator = require('./fileGenerator');
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { default: Choices } = require('inquirer/lib/objects/choices');
+// const { default: Choices } = require('inquirer/lib/objects/choices');
+
+// ReadMe Questions
 
 let questions = [
     {
@@ -26,20 +28,16 @@ let questions = [
             }
     },{
         type: 'input',
-        message: 'If your README is long, add a table of contents to make it easy for users to find what they need.',
-        name: 'table of contents'
-    },{
-        type: 'input',
         message: 'Describe this service or component at the feature level',
         name: 'feature'
     },{
         type: 'input',
         message: 'Provide associated user stories using the AS A... I WANT TO.... SO THAT I CAN... format',
-        name: 'user story'
+        name: 'userStory'
     },{
         type: 'input',
         message: 'Provide exoected behavior using the standard GIVEN... WHEN.... THEN... format',
-        name: 'acceptance criteria'
+        name: 'acceptanceCriteria'
     },{
         type: 'input',
         message: 'Provide any installation steps required to get the dev environment running',
@@ -79,8 +77,24 @@ let questions = [
         name: 'contribute'
     },{
         type: 'input',
+        message: 'If you have uploaded screenshots of the functioning application, please write the ReadMe paths using the standard format ![NAME OF IMAGE](./FILEPATH) 1 of 3',
+        name: 'mockup1'
+    },{
+        type: 'input',
+        message: 'If you have uploaded screenshots of the functioning application, please write the ReadMe paths using the standard format ![NAME OF IMAGE](./FILEPATH) 1 of 3',
+        name: 'mockup2'
+    },{
+        type: 'input',
+        message: 'If you have uploaded screenshots of the functioning application, please write the ReadMe paths using the standard format ![NAME OF IMAGE](./FILEPATH) 1 of 3',
+        name: 'mockup3'
+    },{
+        type: 'input',
         message: 'If you have written tests please provide them here including examples on how to run them',
         name: 'tests'
+    },{
+        type: 'input',
+        message: 'If you have a deployed application link please include it here',
+        name: 'deployedLink'
     },{
         type: 'input',
         message: 'What is your GitHub user name so reviewers can contact you if they have questions (DO NOT include the @)?',
@@ -94,7 +108,7 @@ let questions = [
     },{
         type: 'input',
         message: 'What is your email address so reviewers can contact you if they have questions?',
-        name: 'emsil',
+        name: 'email',
         validate: function(answer) {
             if (answer.length <1) {
                 return console.log('Please provide a username')
@@ -104,6 +118,8 @@ let questions = [
     }
 ];
 
+
+//Write to ReadMe.md file
 inquirer.prompt(questions).then(function(response) {
     console.log(response);
 
