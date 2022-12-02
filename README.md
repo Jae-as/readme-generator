@@ -1,7 +1,5 @@
-
-    #ReadME Generator
-    
-    ## Table of Contents
+#ReadME Generator    
+## Table of Contents
     * [Description](#Description)
     * [Feature](#Feature)
     * [Mockup](#Mockup)
@@ -10,8 +8,8 @@
     * [Test Instructions](#Test-Instructions)
     * [Questions](#Questions)
 
-    # Description
-    ###### [Back to Table of Contents](#Table-of-Contents)
+# Description
+###### [Back to Table of Contents](#Table-of-Contents)
     Sometimes developers do not have enough time to write detailed READMEs this is so they can easily update their files and READMEs on the go. 
 
     # Feature
