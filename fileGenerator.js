@@ -4,36 +4,36 @@ function fileGenerator(response){
 #${response.title}
     
 ## Table of Contents
-    * [Description](#Description)
-    * [Feature](#Feature)
-    * [Mockup](#Mockup)
-    * [Installation](#Installation)
-    * [Usgae](#Usage)
-    * [Test Instructions](#Test-Instructions)
-    * [Questions](#Questions)
+* [Description](#Description)
+* [Feature](#Feature)
+* [Mockup](#Mockup)
+* [Installation](#Installation)
+* [Usgae](#Usage)
+* [Test Instructions](#Test-Instructions)
+* [Questions](#Questions)
 
 # Description
 ###### [Back to Table of Contents](#Table-of-Contents)
-    ${response.description}
+${response.description}
 
 # Feature
 ###### [Back to Table of Contents](#Table-of-Contents)
-    ${response.feature}
+${response.feature}
 
 ## User Stories
 ###### [Back to Table of Contents](#Table-of-Contents)
-    ${response.userStory}
+${response.userStory}
 
 ## Acceptance Criteria
 ###### [Back to Table of Contents](#Table-of-Contents)
-    ${response.acceptanceCriteria}
+${response.acceptanceCriteria}
 
 # Mockup
 The following images show the web application's appearance and functionality:
 ###### [Back to Table of Contents](#Table-of-Contents)
-    ${response.mockup1}
-    ${response.mockup2}
-    ${response.mockup3}
+${response.mockup1}
+${response.mockup2}
+${response.mockup3}
 
 ## Deployed Application
 ${response.deployedLink}
