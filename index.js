@@ -125,7 +125,7 @@ inquirer.prompt(questions).then(function(response) {
 
     const content = fileGenerator(response);
     console.log(content);
-    fs.writeFile('./readme.md', content, function(err){
+    fs.writeFile('./README.md', content, function(err){
         if (err) throw err
         console.log('success');
     });
