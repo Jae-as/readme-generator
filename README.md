@@ -98,3 +98,6 @@ mit
 ###### [Back to Table of Contents](#Table-of-Contents)
 Review my GitHub Repo: https://github.com/jae-as
 Email me: janaee.as.wallace@gmail.com
+
+# Link to Demo Walkthrough
+https://drive.google.com/file/d/1Tsc2pshCtnFJ_ijbbirODN0bqXGowyMc/view 
